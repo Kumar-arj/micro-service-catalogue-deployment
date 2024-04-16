@@ -17,6 +17,9 @@ ingress:
     host: ''
     tlsSecretName: ''
 
+carts:
+    containerPort: 80
+
 cataloguedb:
     image:
         repo: kumararj/sock-shop-micro-services-catalogue-db
