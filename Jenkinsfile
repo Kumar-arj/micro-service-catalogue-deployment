@@ -28,7 +28,7 @@
                       sh '/usr/local/bin/helm repo add sock-shop-helm-local http://nexus.k4m.in/repository/sock-shop-helm-local/ --username $username --password $password'
                       sh "/usr/local/bin/helm repo update"
                       sh "/usr/local/bin/helm upgrade  --install --force micro-services-catalogue  --namespace ${env} -f values.yaml sock-shop-helm-local/micro-services-catalogue"
-                      sh "/usr/local/bin/helm upgrade  --install --force micro-services-catalogue-db  --namespace ${env} -f values.yaml sock-shop-helm-local/micro-services-catalogue-db"
+                      // sh "/usr/local/bin/helm upgrade  --install --force micro-services-catalogue-db  --namespace ${env} -f values.yaml sock-shop-helm-local/micro-services-catalogue-db"
                       sh "/usr/local/bin/helm list -a --namespace ${env}"
                       sh "rm -rf values.yaml"
                       
