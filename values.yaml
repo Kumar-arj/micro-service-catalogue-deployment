@@ -36,7 +36,7 @@ catalogue:
     image:
         repo: kumararj/sock-shop-micro-services-catalogue
         tag: latest
-    containerPort: 80
+    containerPort: 8080
     resources:
         limits:
             cpu: 100m
